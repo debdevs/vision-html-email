@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern HTML Email Template</title>
+<style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+	p, h1,h2, a, ul, li{
+        font-family: 'Outfit', sans-serif;
+    }
+    
+    body {
+		margin: 0;
+		background-color: #cccccc;
+	}
+	table {
+		border-spacing: 0;
+	}
+	td {
+		padding: 0;
+	}
+	img {
+		border: 0;
+	}
+    .main{
+        max-width: 600px;
+        width:100%;
+        /* background-color: red; */
+        background-color: white;
+     
+    }
+    .column{
+  
+        width:50%;
+     
+        text-align: center;
+        padding-top:5%;
+        padding-bottom: 10%;
+    
+        height:100%;
+     
+    }
+    .column-1{
+ 
+        width:100%;
+        padding:5%;
+       
+        text-align: center;
+        background: #F5F5F5;
+
+    }
+
+    .column-2{
+ 
+        width:100%;
+        padding:5%;
+        padding-left: 10%;
+        text-align: left;
+        background: #F5F5F5;
+
+}
+
+.column-2 p{
+ 
+ width:100%;
+ padding:0%;
+ padding-bottom: 5%;
+
+ text-align: left;
+
+ min-width: 45%;
+ max-width:250px;
+
+}
+  
+.column-3{
+ 
+ width:100%;
+ padding:5%;
+
+ text-align: left;
+ background: #F5F5F5;
+
+}
+
+.column-3 p{
+
+width:100%;
+padding:0%;
+padding-bottom: 5%;
+
+text-align: left;
+
+max-width: 45%;
+
+}
+
+.column-4{
+ 
+ width:100%;
+ padding:5%;
+
+ text-align: center;
+ background: #F5F5F5;
+
+}
+.column-5{
+ 
+ width:100%;
+
+ text-align: center;
+ background: #fff;
+
+}
+
+.column-5 .content{
+ 
+ width:100%;
+    padding:5%;
+ text-align: center;
+ background: #fff;
+
+}
+
+.column-5 .content img{
+ 
+
+    padding:5%;
+ text-align: center;
+ background: #fff;
+
+}
+.header-dark{
+        display: inline-block;
+        color:white;
+        font-size: 2rem;
+        padding:5%;
+        max-width: 200px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        font-size: 25px;
+    }
+
+    .header-dark-center{
+        color:white;
+    }
+    .paragraph-dark{
+        margin-top: 15px;
+        text-align: center;
+        color:white;
+        font-size: 90%;
+        padding:5% 5% 10% 5%;
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .paragraph-dark-1{
+        margin-top: 15px;
+        text-align: center;
+    
+        font-size: 90%;
+        padding:0% 5% 0% 5%;
+        margin: 0;
+        font-size: 17px;
+    }
+
+    .paragraph-dark-2{
+
+        text-align: center;
+    
+
+        font-size: 17px;
+    }
+    .header{
+        display: inline-block;
+        padding:5%;
+        background-color: red;
+        text-align: center;
+        width: 100%;
+    }
+.button-1{
+    background: linear-gradient(180deg, #FF32C6 0%, #85059A 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 35px #FF12BD;
+    border-radius: 35px;
+    padding: 5.55667px 20.5597px 6.668px;
+    color:white;
+    font-size: 12px;
+    /* border:0px solid rgba(128, 128, 128, 0); */
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.button-2{
+    background: white;
+    filter: drop-shadow(0px 2.22267px 2.22267px rgba(0, 0, 0, 0.25));
+    /* border: 2px solid #FF32C6;  */
+    box-shadow: 0px 0px 0px 2px #FF32C6 inset; 
+    border-radius: 35px;
+    padding: 5.55667px 20.5597px 6.668px;
+    color:#FF32C6;
+    font-size: 12px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.top{
+    text-align: center;
+    background: blue;
+}
+.details-list{
+    padding:0px 0 0 10px;
+    margin-top:8%;
+}
+.details-list li{
+    text-align: center;
+    /* padding: 5% 0 5% 0%; */
+    margin: 0% 10% 5% 10%;
+   
+}
+
+.details-list li span{
+font-weight: bold;
+   
+}
+
+
+.header-list-center{
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+
+    <center class="wrapper">
+
+        <table class="main" width: "100%">
+
+            <table class="main" width: "100%">
+                
+                <td class = "column-2" style="background: url('./images/banner-image.png') center / cover no-repeat #000000;">
+                    
+                    <img src = "./images/logo.png" style = "margin-left:-35px;"/>
+                    <h1 class = "header-dark-center" style = "color:white; margin-block-start: 0;">Welcome To Vision</h1>
+                    <p class = "paragraph-dark-1" style = "color:white;">Hello Thomas, get ready for the best workout content on the web</p>
+
+                    
+                    <a href = "#" style = "text-decoration: none;" class = "button-1">Register</a>
+                </td>
+            </table>
+
+         
+
+            <table class="main" width: "100%">
+            <tr>
+                <td class = "column"  style = "background-color: #092729">
+                    <h1 class = "header-dark">Manage Your Account</h1>
+                    <p class = "paragraph-dark">Access your account to update your details, check orders & more</p>
+                    <a href = "#" style = "text-decoration: none;"  class = "button-1">Log In</a>
+                </td>
+                <td class = "column"  style = "background-color: #fff">
+                    <h1 class = "header-dark" style = "color:#092729;">Find Out Where We Are</h1>
+                    <p class = "paragraph-dark" style = "color:#092729;">Access your account to update your details, check orders & more</p>
+                    <a href = "#" style = "text-decoration: none;" class = "button-2">FIND US</a>
+      
+                </td>
+            </tr>
+        </table>
+            <table class="main" width: "100%">
+                <td class = "column-1">
+                    <h1 class = "header-dark-center" style = "color:#092729;">All Plans 35% off for a Limited Time</h1>
+                    <p class = "paragraph-dark-1" style = "color:#092729;">Get your fitness goals in gear for the new year. Don’t miss this amazing sale!</p>
+                    <h2 class = "paragraph-dark-2" style = "color:#092729;">Offer Ends Jan 3rd</h2>
+                    
+                    <a  href = "#" style = " text-decoration: none;"class = "button-1">Save Now</a>
+                </td>
+            </table>
+            <table class="main" width: "100%">
+                <td class = "column-3"  style = "background:white;">
+               
+                    <h1 class = "header-list-center" style = "color:#092729;">Here's What's Included</h1>
+                    <ul class="details-list">
+                        <li><span>Live Cycling Class 
+                        </span>— Cycle with expert classes broadcast live from your favorite trainers</li>
+                        <li><span>Live Rowing Class 
+                        </span>— Row with expert classes broadcast live from your favorite trainers</li>
+                        <li><span>Personalized Meal Plan
+                        </span>— AI-Generated meal ideas to get you the nutirtion you need with the taste that you like</li>
+                    </ul>
+                    
+                </td>
+            </table>
+            <table class="main" width: "100%">
+                <td class = "column-4"  style = "background:white;">
+                    <img src = "./images/logo-dark.png" width: "100%"/>
+                </td>
+                
+                <tr class = "column-5">
+                    
+                    <td class = "content"> 
+                        <h1 class = "" style = "color:#092729;">Stay Connected</h1>
+                        <a  href = "#" style = " text-decoration: none;">
+                            <img src = "./images/Instagram - Negative.png" width: "33%"/>
+                        </a>
+                        <a  href = "#" style = " text-decoration: none;">
+                            <img src = "./images/LinkedIn - Negative.png" width: "33%"/>
+                        </a>
+                        <a  href = "#" style = " text-decoration: none;">
+                            <img src = "./images/Twitter - Negative.png" width: "33%"/>
+                        </a>
+                        <a  href = "#" style = " text-decoration: none;">
+                            <img src = "./images/YouTube - Negative.png" width: "33%"/>
+                        </a>
+                        
+                        
+                       
+                      
+                    </td>
+                </tr>
+            </table>
+            <tr>
+            </tr>
+
+        </table>
+    </center>
+<!-- TOP BORDER -->
+<
+
+<!-- LOGO SECTION -->
+
+
+<!-- BANNER IMAGE -->
+
+
+<!-- THREE COLUMN SECTION -->
+
+
+<!-- TWO COLUMN SECTION -->
+
+
+<!-- TITLE, TEXT & BUTTON -->
+
+
+<!-- FOOTER SECTION -->
+
+
+
+</body>
+</html>
+
