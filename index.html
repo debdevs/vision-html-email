@@ -6,7 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Modern HTML Email Template</title>
 <style type="text/css">
-	body {
+    @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+	p, h1,h2, a{
+        font-family: 'Outfit', sans-serif;
+    }
+    
+    body {
 		margin: 0;
 		background-color: #cccccc;
 	}
@@ -23,9 +28,123 @@
         max-width: 600px;
         width:100%;
         background-color: red;
-        height:600px;
+     
+    }
+    .column{
+  
+        width:50%;
+     
+        text-align: center;
+        padding-top:5%;
+        padding-bottom: 10%;
+    
+        height:100%;
+     
+    }
+    .column-1{
+ 
+        width:100%;
+        padding:5%;
+       
+        text-align: center;
+        background: #F5F5F5;
+
     }
 
+    .column-2{
+ 
+        width:100%;
+        padding:5%;
+        padding-left: 10%;
+        text-align: left;
+        background: #F5F5F5;
+
+}
+
+.column-2 p{
+ 
+ width:100%;
+ padding:0%;
+ padding-bottom: 5%;
+
+ text-align: left;
+ background: #F5F5F5;
+ max-width: 45%;
+
+}
+    .header-dark{
+        display: inline-block;
+        color:white;
+        font-size: 2rem;
+        padding:5%;
+        max-width: 200px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        font-size: 25px;
+    }
+    .paragraph-dark{
+        margin-top: 15px;
+        text-align: center;
+        color:white;
+        font-size: 90%;
+        padding:5% 5% 10% 5%;
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .paragraph-dark-1{
+        margin-top: 15px;
+        text-align: center;
+    
+        font-size: 90%;
+        padding:0% 5% 0% 5%;
+        margin: 0;
+        font-size: 17px;
+    }
+
+    .paragraph-dark-2{
+
+        text-align: center;
+    
+
+        font-size: 17px;
+    }
+    .header{
+        display: inline-block;
+        padding:5%;
+        background-color: red;
+        text-align: center;
+        width: 100%;
+    }
+.button-1{
+    background: linear-gradient(180deg, #FF32C6 0%, #85059A 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 35px #FF12BD;
+    border-radius: 35px;
+    padding: 5.55667px 20.5597px 6.668px;
+    color:white;
+    font-size: 12px;
+    /* border:0px solid rgba(128, 128, 128, 0); */
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.button-2{
+    background: white;
+    filter: drop-shadow(0px 2.22267px 2.22267px rgba(0, 0, 0, 0.25));
+    /* border: 2px solid #FF32C6;  */
+    box-shadow: 0px 0px 0px 2px #FF32C6 inset; 
+    border-radius: 35px;
+    padding: 5.55667px 20.5597px 6.668px;
+    color:#FF32C6;
+    font-size: 12px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.top{
+    text-align: center;
+    background: blue;
+}
 </style>
 </head>
 <body>
@@ -34,8 +153,45 @@
     <center class="wrapper">
 
         <table class="main" width: "100%">
+
+            <table class="main" width: "100%">
+                <td class = "column-2">
+                    <img src = "./images/logo.png"/>
+                    <h1 class = "header-dark-center" style = "color:#092729;">Welcome To Vision</h1>
+                    <p class = "paragraph-dark-1" style = "color:#092729;">Hello Thomas, get ready for the best workout content on the web</p>
+
+                    
+                    <a class = "button-1">Register</a>
+                </td>
+            </table>
+
+         
+
+            <table class="main" width: "100%">
             <tr>
-                <td></td>
+                <td class = "column"  style = "background-color: #092729">
+                    <h1 class = "header-dark">Manage Your Account</h1>
+                    <p class = "paragraph-dark">Access your account to update your details, check orders & more</p>
+                    <a class = "button-1">FIND US</a>
+                </td>
+                <td class = "column"  style = "background-color: #fff">
+                    <h1 class = "header-dark" style = "color:#092729;">Find Out Where We Are</h1>
+                    <p class = "paragraph-dark" style = "color:#092729;">Access your account to update your details, check orders & more</p>
+                    <a class = "button-2">FIND US</a>
+      
+                </td>
+            </tr>
+        </table>
+            <table class="main" width: "100%">
+                <td class = "column-1">
+                    <h1 class = "header-dark-center" style = "color:#092729;">All Plans 35% off for a Limited Time</h1>
+                    <p class = "paragraph-dark-1" style = "color:#092729;">Get your fitness goals in gear for the new year. Don’t miss this amazing sale!</p>
+                    <h2 class = "paragraph-dark-2" style = "color:#092729;">Offer Ends Jan 3rd</h2>
+                    
+                    <a class = "button-1">Save Now</a>
+                </td>
+            </table>
+            <tr>
             </tr>
 
         </table>
